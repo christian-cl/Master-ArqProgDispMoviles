@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/mainimage_width"
+            android:layout_height="@dimen/mainimage_height"
+            android:id="@+id/image_logo_android"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:contentDescription="@string/description_launch_image" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/red_button"
+                android:id="@+id/button_red"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#ff0000" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton_green"
+                    android:id="@+id/radiobutton_green" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton_blue"
+                    android:id="@+id/radiobutton_blue" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/default_text"
+            android:id="@+id/textView"
+            android:layout_margin="@dimen/abc_dropdownitem_text_padding_left"
+            android:textSize="@dimen/text_size_XXL" />
+    </ScrollView>
+</LinearLayout>

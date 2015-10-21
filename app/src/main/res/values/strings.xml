@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FirstApplication</string>
+    <string name="red_button">Red</string>
+    <string name="radiobutton_green">Green</string>
+    <string name="radiobutton_blue">Blue</string>
+    <string name="description_launch_image">Launch image</string>
+    <string name="default_text">Este es un texto por defecto para el TextView que se está desarrollando y así poder comprobar que el scroll se está realizando correctamente</string>
+</resources>
